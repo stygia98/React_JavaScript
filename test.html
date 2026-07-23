@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h1{
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        button{
+            background-color: aqua;
+            border: 5px solid black;
+        }
+
+    </style>
+
+    <script>
+        // 함수선언식, 함수표현식(익명, 화살표)
+        function buttonOnClick1() {
+            alert("button click1 - hello world");
+        }
+
+        let buttonOnClick2 = function() {
+            alert("button click2 - hello world");
+        }
+
+        let buttonOnClick3 = () => alert("button click - hello world");
+
+    </script>
+</head>
+<body>
+    <h1>안녕하세요</h1>
+    <button onclick="buttonOnClick1()">클릭</button>
+</body>
+</html>
