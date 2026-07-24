@@ -30,3 +30,19 @@ console.log(person.extra3[0]);
 console.log(person.extra3[1]);
 
 person.extra2();
+// person.extra4();
+
+person.name = "홍길동";
+person["name"] = "홍길동2"
+
+console.log(person);
+
+delete person.age;
+// delete psrson["age"];
+console.log(person);
+
+let result1 = "name" in person;
+console.log(result1);
+
+person.address = "경기도 성남시";
+console.log(person);
