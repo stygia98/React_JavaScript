@@ -31,7 +31,7 @@ date1.setMinutes(59);
 date1.setSeconds(59);
 console.log(date1);
 
-// 5. 시간을 여러 포맷으로 출력하기
+//시간을 여러 포맷으로 출력하기
 //시간은 제외하고 날짜만 출력하기
 console.log(date1.toDateString());
 //현지화된 문자에 맞게 출력하기
