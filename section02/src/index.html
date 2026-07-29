@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addListEvent() {
+            let list = "";
+            const addList = document.getElementById("addList");
+            for (let index=1; index<=1000; index++) {
+                //addList.innerHTML += `<li>${index}</li>`;
+                list += `<li>${index}</li>`;
+            }
+            addList.innerHTML = list;
+        }
+
+    </script>
+</head>
+<body>
+    <button type="button" onclick = "addListEvent()"">리스트 추가</button>
+    <ul id="addList"></ul>
+</body>
+</html>
