@@ -39,4 +39,8 @@ async function printData() {
     console.log(result);
 }
 
+<<<<<<< HEAD
 printData();
+=======
+printData();
+>>>>>>> e5fc1427dcbaeb27d262be5610b74cfd952f6f9b
