@@ -1,0 +1,14 @@
+/* src/pages/NotFound.css */
+.notfound-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.notfound-header {
+  color: #2c3e50;
+}
+
+.notfound-desc {
+  color: #666;
+  margin-bottom: 20px;
+}
