@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { PostStateContext } from "../App";
 import PostTable from "../components/PostTable";
 
-export default function Home() {
+const Home = () => {
   const posts = useContext(PostStateContext);
   const nav = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,3 +38,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

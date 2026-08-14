@@ -10,36 +10,36 @@ import "./App.css";
 const initialPosts = [
   {
     id: 1,
-    title: "첫 번째 게시글입니다",
-    content: "자유게시판 오픈을 축하합니다!",
+    title: "오늘 저녁 메뉴 추천 부탁드려요",
+    content: "퇴근하고 집에 가는데 매콤한 게 당기네요. 다들 뭐 드시나요?",
     author: "김철수",
     date: "2026-08-06",
   },
   {
     id: 2,
-    title: "리액트 공부 팁 공유합니다",
-    content: "useReducer와 useContext 조합이 정말 강력하네요.",
+    title: "주말에 보기 좋은 넷플릭스 추천",
+    content: "요즘 볼만한 재밌는 드라마나 영화 있을까요?",
     author: "이영희",
     date: "2026-08-07",
   },
   {
     id: 3,
-    title: "오늘 날씨가 정말 좋네요",
-    content: "산책하기 딱 좋은 날씨입니다.",
+    title: "집 앞 카페 분위기가 너무 좋네요",
+    content: "커피 한 잔 마시면서 책 읽기 딱 좋은 날입니다.",
     author: "박민수",
     date: "2026-08-08",
   },
   {
     id: 4,
-    title: "맛집 추천받습니다",
-    content: "성남시 근처 맛집 아시는 곳 있나요?",
+    title: "분당/성남 근처 산책로 추천 좀 해주세요",
+    content: "저녁에 가볍게 걷기 좋은 탄천 코스 아시는 분?",
     author: "홍길동",
     date: "2026-08-09",
   },
   {
     id: 5,
-    title: "질문있습니다!",
-    content: "react-router-dom v6에서 useNavigate 사용법이 궁금해요.",
+    title: "고양이 키우시는 분들 질문있습니다!",
+    content: "간식 추천이랑 자동 급식기 어떤 거 쓰시는지 궁금해요.",
     author: "성춘향",
     date: "2026-08-10",
   },
@@ -48,11 +48,10 @@ const initialPosts = [
 const reducer = (state, action) => {
   switch (action.type) {
     case "CREATE":
-      return action.data ? [...state, action.data] : state;
+      return [...state, action.data]
+      // return action.data ? [...state, action.data] : state;
     case "UPDATE":
-      return state.map((item) =>
-        item.id === action.data.id ? action.data : item,
-      );
+      return state.map((item) => item.id === action.data.id ? action.data : item );
     case "DELETE":
       return state.filter((item) => item.id !== action.id);
     default:

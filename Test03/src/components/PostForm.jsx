@@ -2,7 +2,7 @@ import "../css/PostForm.css";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function PostForm({ initData, onSubmitButton, isEdit = false }) {
+const PostForm = ({ initData, onSubmitButton, isEdit = false }) => {
   const nav = useNavigate();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -63,3 +63,5 @@ export default function PostForm({ initData, onSubmitButton, isEdit = false }) {
     </form>
   );
 }
+
+export default PostForm;

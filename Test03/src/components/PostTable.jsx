@@ -2,7 +2,7 @@ import "../css/PostTable.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function PostTable({ posts }) {
+const PostTable = ({ posts }) => {
   const nav = useNavigate();
 
   return (
@@ -36,3 +36,5 @@ export default function PostTable({ posts }) {
     </table>
   );
 }
+
+export default PostTable;

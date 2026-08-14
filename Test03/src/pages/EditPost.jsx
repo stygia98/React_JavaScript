@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { PostStateContext, PostDispatchContext } from "../App";
 import PostForm from "../components/PostForm";
 
-export default function EditPost() {
+const EditPost = () => {
   const { id } = useParams();
   const posts = useContext(PostStateContext);
   const { onUpdate } = useContext(PostDispatchContext);
@@ -41,3 +41,5 @@ export default function EditPost() {
     </div>
   );
 }
+
+export default EditPost;

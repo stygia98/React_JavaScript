@@ -3,7 +3,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { PostStateContext, PostDispatchContext } from "../App";
 
-export default function PostDetail() {
+const PostDetail = () => {
   const { id } = useParams();
   const posts = useContext(PostStateContext);
   const { onDelete } = useContext(PostDispatchContext);
@@ -59,3 +59,5 @@ export default function PostDetail() {
     </div>
   );
 }
+
+export default PostDetail;

@@ -1,10 +1,10 @@
 import "../css/NewPost.css";
-import React, { useContext } from "react";
+import PostForm from "../components/PostForm";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { PostDispatchContext } from "../App";
-import PostForm from "../components/PostForm";
 
-export default function NewPost() {
+const NewPost = () => {
   const { onCreate } = useContext(PostDispatchContext);
   const nav = useNavigate();
 
@@ -20,3 +20,5 @@ export default function NewPost() {
     </div>
   );
 }
+
+export default NewPost;
